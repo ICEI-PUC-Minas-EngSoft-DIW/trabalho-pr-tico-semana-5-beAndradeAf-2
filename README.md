@@ -15,7 +15,7 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Print da versão responsiva com CSS puro [DESKTOP]
 
-![DESKTOP](public\previewDESKTOP.png)
+![DESKTOP](public/previewDESKTOP.png)
 
 ## Print da versão responsiva com CSS puro [MOBILE] (*)
 
