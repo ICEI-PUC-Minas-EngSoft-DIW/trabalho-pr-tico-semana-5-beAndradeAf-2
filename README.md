@@ -8,18 +8,18 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Bernardo Alvim Fagundes de Andrade 
+- Matricula: 908610
+- Proposta de projeto escolhida: Receitas Culinárias (Simple Dish)
+- Breve descrição sobre seu projeto: O projeto consiste em um site de receitas culinárias voltado para pessoas que buscam ideias práticas do que cozinhar no dia a dia.
 
 ## Print da versão responsiva com CSS puro [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![DESKTOP](public\previewDESKTOP.png)
 
 ## Print da versão responsiva com CSS puro [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+![MOBILE](previewMOBILE.png)
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 

@@ -2,92 +2,211 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Receitas Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Dish — Receitas Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="header">
-    <div class="logo">
-    <img src="https://i.pinimg.com/originals/62/6b/27/626b27736d11808604dfdba04bf6aba7.png" alt="Logo">
-</div>
+    <a href="#" class="header__logo">
+        <img src="https://i.pinimg.com/originals/62/6b/27/626b27736d11808604dfdba04bf6aba7.png" alt="Logo Simple Dish">
+    </a>
+    <span class="header__brand">Simple Dish</span>
 
-    <form class="search-form">
-        <input type="text" placeholder="Buscar receita">
+    <form class="search-form" role="search">
+        <input type="text" placeholder="Buscar receita...">
         <button type="submit">Pesquisar</button>
     </form>
 
-    <div class="perfil">
-  <img src="https://cdn-icons-png.flaticon.com/512/5987/5987462.png" alt="perfil">
-</div>
-    
+    <div class="header__profile" title="Meu perfil">
+        <img src="https://cdn-icons-png.flaticon.com/512/5987/5987462.png" alt="Perfil">
+    </div>
 </header>
 
-<nav class="menu">
-    <ul>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Veganas</a></li>
-        <li><a href="#">Fitness</a></li>
-        <li><a href="#">Sobremesas</a></li>
-    </ul>
+<nav class="nav" aria-label="Categorias">
+    <div class="nav__inner">
+        <a href="#" class="nav__link active">Todas</a>
+        <a href="#" class="nav__link">Veganas</a>
+        <a href="#" class="nav__link">Fitness</a>
+        <a href="#" class="nav__link">Sobremesas</a>
+        <a href="#" class="nav__link">Massas</a>
+        <a href="#" class="nav__link">Rápidas</a>
+    </div>
 </nav>
 
-<main class="main">
+<section class="hero" aria-label="Destaque">
+    <div class="hero__text">
+        <span class="hero__eyebrow">✦ Receitas do Dia</span>
+        <h1 class="hero__title">Cozinhe com <em>amor</em> e simplicidade</h1>
+        <p class="hero__desc">Descubra receitas deliciosas feitas para o seu dia a dia, do café da manhã à sobremesa.</p>
+        <a href="#receitas" class="hero__cta">Explorar receitas →</a>
+    </div>
+    <div class="hero__deco" aria-hidden="true">Eat</div>
+</section>
 
-    <section class="destaque">
-    <section class="receitas">
+<main class="main" id="receitas">
 
-        <div class="card">
-            <img src="https://cursosbig.com.br/wp-content/uploads/2019/04/curso-de-bolo-no-pote-baratinhoebook-300cursos-de-brinde-D_NQ_NP_909461-MLB26228835943_102017-F.jpg">
-            <p>Bolo no pote</p>
-        </div>
+    <div class="section-header">
+        <h2 class="section-title">Receitas em Destaque</h2>
+        <a href="#" class="section-link">Ver todas →</a>
+    </div>
 
-        <div class="card">
-            <img src="https://msabores.com/wp-content/uploads/2025/04/Design-sem-nome-1.webp">
-            <p>Pizza air fryer</p>
-        </div>
+    <div class="receitas-grid">
 
-        <div class="card">
-            <img src="https://djapa.com.br/wp-content/uploads/2024/09/vesoes-do-sushi.jpg">
-            <p>Sushi</p>
-        </div>
+        <article class="card card--featured">
+            <div class="card__img-wrap">
+                <img src="https://cursosbig.com.br/wp-content/uploads/2019/04/curso-de-bolo-no-pote-baratinhoebook-300cursos-de-brinde-D_NQ_NP_909461-MLB26228835943_102017-F.jpg" alt="Bolo no pote">
+                <span class="card__badge">Destaque</span>
+            </div>
+            <div class="card__body">
+                <div>
+                    <p class="card__title">Bolo no Pote</p>
+                    <div class="card__meta">
+                        <span class="card__tag">Sobremesa</span>
+                        <span class="card__tag">Fácil</span>
+                    </div>
+                </div>
+                <span class="card__accent"></span>
+            </div>
+        </article>
 
-        <div class="card">
-            <img src="https://s2.glbimg.com/jqfaCA6V4Yb2xgU1JzPD200Kaxk=/smart/e.glbimg.com/og/ed/f/original/2018/07/20/matilda_vegano_wellington_nemeth_1.jpg">
-            <p>Hambúrguer Vegano</p>
-        </div>
+        <article class="card">
+            <div class="card__img-wrap">
+                <img src="https://msabores.com/wp-content/uploads/2025/04/Design-sem-nome-1.webp" alt="Pizza Air Fryer">
+                <span class="card__badge">Popular</span>
+            </div>
+            <div class="card__body">
+                <p class="card__title">Pizza Air Fryer</p>
+                <div class="card__meta"><span class="card__tag">Lanches</span></div>
+            </div>
+            <span class="card__accent"></span>
+        </article>
 
-        <div class="card">
-            <img src="https://static.itdg.com.br/images/640-400/a9785927200dab579e1144c4afa6f6c8/lasanha.png">
-            <p>Lasanha</p>
-        </div>
+        <article class="card">
+            <div class="card__img-wrap">
+                <img src="https://djapa.com.br/wp-content/uploads/2024/09/vesoes-do-sushi.jpg" alt="Sushi">
+                <span class="card__badge">Japonesa</span>
+            </div>
+            <div class="card__body">
+                <p class="card__title">Sushi</p>
+                <div class="card__meta"><span class="card__tag">Japonesa</span></div>
+            </div>
+            <span class="card__accent"></span>
+        </article>
 
-        <div class="card">
-            <img src="https://www.estadao.com.br/resizer/v2/UWFJ4X3ECVOKHOHOEJDYCRPVSE.jpg?quality=80&auth=d33892d146380e82fdabc34cd542bdced0971df3d8d2abed6c6787e66954ffc4&width=1200&height=1200&focal=2643,1767">
-            <p>Burrito</p>
-        </div>
+        <article class="card">
+            <div class="card__img-wrap">
+                <img src="https://s2.glbimg.com/jqfaCA6V4Yb2xgU1JzPD200Kaxk=/smart/e.glbimg.com/og/ed/f/original/2018/07/20/matilda_vegano_wellington_nemeth_1.jpg" alt="Hambúrguer Vegano">
+                <span class="card__badge">Vegano</span>
+            </div>
+            <div class="card__body">
+                <p class="card__title">Hambúrguer Vegano</p>
+                <div class="card__meta"><span class="card__tag">Vegano</span></div>
+            </div>
+            <span class="card__accent"></span>
+        </article>
 
-        <div class="card">
-            <img src="https://www.receiteria.com.br/wp-content/uploads/sorvete-caseiro.jpeg">
-            <p>Sorvete caseiro</p>
-        </div>
+        <article class="card">
+            <div class="card__img-wrap">
+                <img src="https://static.itdg.com.br/images/640-400/a9785927200dab579e1144c4afa6f6c8/lasanha.png" alt="Lasanha">
+                <span class="card__badge">Clássico</span>
+            </div>
+            <div class="card__body">
+                <p class="card__title">Lasanha</p>
+                <div class="card__meta"><span class="card__tag">Massas</span></div>
+            </div>
+            <span class="card__accent"></span>
+        </article>
 
-        <div class="card">
-            <img src="https://teamodoce.com.br/wp-content/uploads/2025/03/Pudim-de-Leite-Condensado-com-Furinhos-Novo.webp">
-            <p>Pudim</p>
-        </div>
+        <article class="card">
+            <div class="card__img-wrap">
+                <img src="https://www.estadao.com.br/resizer/v2/UWFJ4X3ECVOKHOHOEJDYCRPVSE.jpg?quality=80&auth=d33892d146380e82fdabc34cd542bdced0971df3d8d2abed6c6787e66954ffc4&width=1200&height=1200&focal=2643,1767" alt="Burrito">
+                <span class="card__badge">Mexicana</span>
+            </div>
+            <div class="card__body">
+                <p class="card__title">Burrito</p>
+                <div class="card__meta"><span class="card__tag">Mexicana</span></div>
+            </div>
+            <span class="card__accent"></span>
+        </article>
 
-         <div class="card">
-            <img src="https://www.estadao.com.br/resizer/gLRf68kxnyL5WESlPzK1HfYZju4=/arc-anglerfish-arc2-prod-estadao/public/TMYTI4QPR5G6JHS37PCJCKXD5I.jpg">
-            <p>Strogonoff de carne </p>
-        </div>
+        <article class="card">
+            <div class="card__img-wrap">
+                <img src="https://www.receiteria.com.br/wp-content/uploads/sorvete-caseiro.jpeg" alt="Sorvete Caseiro">
+                <span class="card__badge">Sobremesa</span>
+            </div>
+            <div class="card__body">
+                <p class="card__title">Sorvete Caseiro</p>
+                <div class="card__meta"><span class="card__tag">Sobremesa</span></div>
+            </div>
+            <span class="card__accent"></span>
+        </article>
 
-    </section>
+        <article class="card">
+            <div class="card__img-wrap">
+                <img src="https://teamodoce.com.br/wp-content/uploads/2025/03/Pudim-de-Leite-Condensado-com-Furinhos-Novo.webp" alt="Pudim">
+                <span class="card__badge">Clássico</span>
+            </div>
+            <div class="card__body">
+                <p class="card__title">Pudim</p>
+                <div class="card__meta"><span class="card__tag">Sobremesa</span></div>
+            </div>
+            <span class="card__accent"></span>
+        </article>
 
+        <article class="card">
+            <div class="card__img-wrap">
+                <img src="https://www.estadao.com.br/resizer/gLRf68kxnyL5WESlPzK1HfYZju4=/arc-anglerfish-arc2-prod-estadao/public/TMYTI4QPR5G6JHS37PCJCKXD5I.jpg" alt="Strogonoff de Carne">
+                <span class="card__badge">Carne</span>
+            </div>
+            <div class="card__body">
+                <p class="card__title">Strogonoff de Carne</p>
+                <div class="card__meta"><span class="card__tag">Principal</span></div>
+            </div>
+            <span class="card__accent"></span>
+        </article>
+
+    </div>
 </main>
 
 <footer class="footer">
-    <p>© 2026 - Simple Dish </p>
+    <div class="footer__grid">
+        <div class="footer__brand">
+            <div class="footer__logo-wrap">
+                <img src="https://i.pinimg.com/originals/62/6b/27/626b27736d11808604dfdba04bf6aba7.png" alt="Logo">
+            </div>
+            <p class="footer__name">Simple Dish</p>
+            <p class="footer__tagline">Receitas simples, momentos inesquecíveis. Feito com amor para a sua mesa.</p>
+        </div>
+
+        <div class="footer__col">
+            <h4>Categorias</h4>
+            <ul>
+                <li><a href="#">Veganas</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Sobremesas</a></li>
+                <li><a href="#">Massas</a></li>
+                <li><a href="#">Rápidas</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Enviar receita</a></li>
+                <li><a href="#">Privacidade</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        © 2026 Simple Dish — Todos os direitos reservados.
+    </div>
 </footer>
 
 </body>
